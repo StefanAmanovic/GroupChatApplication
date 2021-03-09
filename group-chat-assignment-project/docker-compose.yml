@@ -1,0 +1,11 @@
+version: '3'
+services:
+  groupchatapplication:
+    image: groupchatapplication
+    ports:
+      - 8080:8080
+    networks:
+      - spring-cloud-network
+networks:
+  spring-cloud-network:
+    driver: bridge
